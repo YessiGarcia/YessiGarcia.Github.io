@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?e5tef9');
+  src:  url('../fonts/icomoon.eot?e5tef9#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?e5tef9') format('truetype'),
+    url('../fonts/icomoon.woff?e5tef9') format('woff'),
+    url('../fonts/icomoon.svg?e5tef9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fijo{
+	position: fixed;
+	z-index: 1000;
+}
+
+#acerca-de-mi{
+	background-image: url("../img/graba2.jpeg");
+	background-size: cover;
+	background-attachment: fixed; 
+	background-position: center;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+	color: white;
+}
+
+#acerca-de-mi .row{
+	height: 500px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#habilidades img{
+	height: 20vh;
+	margin: 10vh 0 12vh 0;
+}
+
+#habilidades img:hover{
+	
+}
+
+.caja{
+	background-color: #9F9EA6;
+	height: 20vh;
+	width: 10vh;
+}
+
+.redes{
+	font-family: "icomoon";
+	display: flex;
+	justify-content: space-between;
+	font-size: 2em;
+}
+
+.redes li:nth-child(1)>a::before{
+	content: "\ea93";
+}
+
+.redes li:nth-child(2)>a::before{
+	content: "\ea95";
+}
+
+.redes li:nth-child(3)>a::before{
+	content: "\ea86";
+}
+
+.redes li:nth-child(4)>a::before{
+	content: "\eac9";
+}
+
+.redes li:nth-child(5)>a::before{
+	content: "\eab0";
+}
+
+/*
+#C86F26 cafe
+#F79E38 naranja
+#EBE4C7 beige
+#9F9EA6 gris
+#FF0000 negro
+*/
+
