@@ -9,30 +9,47 @@
   font-style: normal;
 }
 
-.fijo{
-	position: fixed;
+nav{
+	background-color: rgba(0,0,0,0.5);
+}
+
+.menu{
 	z-index: 1000;
+	height: 0;
 }
 
 #acerca-de-mi{
 	background-image: url("../img/graba2.jpeg");
 	background-size: cover;
-	background-attachment: fixed; 
-	background-position: center;
-	height: 500px;
+	background-attachment: fixed;
+	background-position: center; 
+	height: 580px;
 	display: flex;
 	align-items: center;
-	padding-top: 20px;
 	color: white;
 }
 
 #acerca-de-mi .row{
-	height: 500px;
+	height: 590px;
 	width: 100%;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.6);
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	margin:0;
+}
+
+#acerca-de-mi p{
+	font-size: 2em;
+}
+
+h2{
+	margin: 0;
+	padding: 20px;
+}
+
+#habilidades .row{
+	margin: 0;
+	padding: 0;
 }
 
 #habilidades img{
@@ -40,8 +57,23 @@
 	margin: 10vh 0 12vh 0;
 }
 
+#habilidades p{
+	display: none;
+}
+
 #habilidades img:hover{
-	
+	display: none;
+}
+
+#habilidades p:hover{
+	display: block;
+	background: black;
+	color:white;
+	height: 10px;
+}
+
+#proyectos{
+	height: 600px;
 }
 
 .redes{
@@ -71,11 +103,7 @@
 	content: "\eab0";
 }
 
-/*
-#C86F26 cafe
-#F79E38 naranja
-#EBE4C7 beige
-#9F9EA6 gris
-#FF0000 negro
-*/
+#contacto{
+	background-color: #000;
+}
 
