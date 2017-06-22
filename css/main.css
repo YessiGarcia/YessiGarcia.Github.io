@@ -54,7 +54,7 @@ h2{
 
 #habilidades img{
 	height: 15vh;
-	margin: 5vh 0 5vh 0;
+	margin: 5vh 1vh 5vh 1vh;
 }
 
 #habilidades p{
@@ -107,3 +107,17 @@ h2{
 	background-color: #000;
 }
 
+@media (max-width: 500px) {
+	#acerca-de-mi h1{
+		font-size: 2.5em
+	}
+	#acerca-de-mi p{
+		font-size: 1.5em;
+	}
+	#habilidades, #proyectos{
+		height: 100%;
+	}
+	footer{
+		font-size: 1.5em;
+	}
+}
