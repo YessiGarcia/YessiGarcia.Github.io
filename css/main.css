@@ -60,19 +60,22 @@ h2{
 	justify-content: space-between;
 	font-size: 2em;
 }
-.redes li:nth-child(1)>a::before{
-	content: "\ea93";
+.redes li:nth-child(1)>a::before {
+  content: "\e942";
 }
 .redes li:nth-child(2)>a::before{
-	content: "\ea95";
+	content: "\ea93";
 }
 .redes li:nth-child(3)>a::before{
-	content: "\ea86";
+	content: "\ea95";
 }
 .redes li:nth-child(4)>a::before{
-	content: "\eac9";
+	content: "\ea86";
 }
 .redes li:nth-child(5)>a::before{
+	content: "\eac9";
+}
+.redes li:nth-child(6)>a::before{
 	content: "\eab0";
 }
 #contacto{
