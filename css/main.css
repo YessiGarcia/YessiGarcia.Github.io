@@ -70,12 +70,12 @@ h2{
 	background: rgba(255, 0, 208,.2);
 }
 #metodologias{
-	background: rgba(182, 0, 255, .1);
+	background: rgba(182, 0, 255, .01);
 	height: 300px;
 	box-shadow: 0 5px 20px rgb(126, 119, 113); 
 }
 #habilidades{
-	background: rgba(182, 0, 255, .1);
+	background: rgba(182, 0, 255, .01);
 	height: 600px;
 	box-shadow: 0 5px 20px rgb(126, 119, 113)
 }
@@ -88,7 +88,7 @@ h2{
 	margin: 5vh 1vh 5vh 1vh;
 }
 #proyectos{
-	background: rgba(182, 0, 255, .1);
+	background: rgba(182, 0, 255, .01);
 	height: 600px;
 }
 .redes{
