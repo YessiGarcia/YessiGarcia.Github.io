@@ -16,15 +16,20 @@ nav{
 	height: 0;
 }
 #slide-out{
-	background-color: red;
-	height: 45%;
+	background-color: rgba(255, 0, 208,.1);
+	height: 60%;
+	padding-top: 50px;
+}
+#slide-out>li>a{
+	color: #fff;
+	font-size: 1.3em;
 }
 #acerca-de-mi{
 	background-image: url("../img/graba2.jpeg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center; 
-	height: 580px;
+	height: auto;
 	display: flex;
 	align-items: center;
 	color: white;
@@ -46,16 +51,33 @@ nav{
 	padding:0 4em 0 4em;
 }
 h2{
+	text-shadow: 1px 1px 0 rgb(126, 119, 113),
+				 2px 2px 0 rgb(126, 119, 113),
+				 3px 3px 0 rgb(126, 119, 113),
+				 4px 4px 0 rgb(126, 119, 113),
+				 5px 5px 0 rgba(126, 119, 113,.5),
+				 6px 6px 0 rgba(126, 119, 113,.3);
 	margin: 0;
 	padding: 20px;
 }
 
 .cv{
+	font-size: 20px;
 	border-radius: 20px;
-	background: red;
+	background: rgba(255, 0, 208,.4);
+}
+.cv:hover{
+	background: rgba(255, 0, 208,.2);
+}
+#metodologias{
+	background: rgba(255, 0, 0,.1);
+	height: 300px;
+	box-shadow: 0 5px 20px rgb(126, 119, 113); 
 }
 #habilidades{
-	height: 500px;
+	background: rgba(22, 252, 26,.1);
+	height: 600px;
+	box-shadow: 0 5px 20px rgb(126, 119, 113)
 }
 #habilidades .row{
 	margin: 0;
@@ -65,10 +87,8 @@ h2{
 	height: 15vh;
 	margin: 5vh 1vh 5vh 1vh;
 }
-#metodologias{
-	height: 300px;
-}
 #proyectos{
+	background: rgba(51, 0, 255,.1);
 	height: 600px;
 }
 .redes{
@@ -132,19 +152,31 @@ h2{
 	opacity: 1;
 	transition-delay: 0.5s;
 }
+.card img{
+	height: 300px;
+}
 
 /*versión móvil*/
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 	#acerca-de-mi h1{
 		font-size: 2.5em
 	}
 	#acerca-de-mi p{
 		font-size: 1.5em;
 	}
-	#habilidades, #proyectos{
-		height: 100%;
+}
+
+@media (max-width: 460px) {
+	#acerca-de-mi h1{
+		font-size: 1.8em
 	}
-	footer{
-		font-size: 1.5em;
+	#acerca-de-mi p{
+		font-size: 1em;
+	}
+	footer h5{
+		font-size: 2em;
+	}
+	footer p{
+		font-size: 1em;
 	}
 }
