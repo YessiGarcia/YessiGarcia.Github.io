@@ -164,6 +164,9 @@ h2{
 	#acerca-de-mi p{
 		font-size: 1.5em;
 	}
+	#metodologias, #habilidades, #proyectos, #contacto{
+		height: 100%;
+	}
 }
 
 @media (max-width: 460px) {
