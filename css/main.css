@@ -2,184 +2,205 @@
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?e5tef9');
   src:  url('../fonts/icomoon.eot?e5tef9#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?e5tef9') format('truetype'),
-    url('../fonts/icomoon.woff?e5tef9') format('woff'),
-    url('../fonts/icomoon.svg?e5tef9#icomoon') format('svg');
+        url('../fonts/icomoon.ttf?e5tef9') format('truetype'),
+        url('../fonts/icomoon.woff?e5tef9') format('woff'),
+        url('../fonts/icomoon.svg?e5tef9#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 nav{
-	background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5);
 }
 .menu{
-	z-index: 1000;
-	height: 0;
+    z-index: 1000;
+    height: 0;
 }
 #slide-out{
-	background-color: rgba(255, 0, 208,.1);
-	height: 60%;
-	padding-top: 50px;
+    background-color: rgba(255, 0, 208,.1);
+    height: 60%;
+    padding-top: 50px;
 }
 #slide-out>li>a{
-	color: #fff;
-	font-size: 1.3em;
+    color: #fff;
+    font-size: 1.3em;
+}
+.logo{
+    height: 50px;
 }
 #acerca-de-mi{
-	background-image: url("../img/graba2.jpeg");
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center; 
-	height: auto;
-	display: flex;
-	align-items: center;
-	color: white;
+    background-image: url("../img/graba2.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+    height: auto;
+    display: flex;
+    align-items: center;
+    color: white;
 }
 #acerca-de-mi .row{
-	height: 580px;
-	width: 100%;
-	background-color: rgba(0,0,0,0.6);
-	display: flex;
-	align-items: center;
-	margin:0;
+    height: 580px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    margin:0;
 }
 #nombre{
-	font-family:'Courgette', cursive;
+    font-family:'Courgette', cursive;
 }
 #acerca-de-mi p{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 2em;
-	padding:0 4em 0 4em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    padding:0 4em 0 4em;
 }
 h2{
-	text-shadow: 1px 1px 0 rgb(126, 119, 113),
-				 2px 2px 0 rgb(126, 119, 113),
-				 3px 3px 0 rgb(126, 119, 113),
-				 4px 4px 0 rgb(126, 119, 113),
-				 5px 5px 0 rgba(126, 119, 113,.5),
-				 6px 6px 0 rgba(126, 119, 113,.3);
-	margin: 0;
-	padding: 20px;
+    text-shadow: 1px 1px 0 rgb(126, 119, 113),
+                 2px 2px 0 rgb(126, 119, 113),
+                 3px 3px 0 rgb(126, 119, 113),
+                 4px 4px 0 rgb(126, 119, 113),
+                 5px 5px 0 rgba(126, 119, 113,.5),
+                 6px 6px 0 rgba(126, 119, 113,.3);
+    margin: 0;
+    padding: 20px;
 }
 
 .cv{
-	font-size: 20px;
-	border-radius: 20px;
-	background: rgba(255, 0, 208,.4);
+    font-size: 10px;
+    border-radius: 20px;
+    background: rgba(255, 0, 208,.4);
+    border: none;
+}
+.cv p{
+    margin: 0;
+    padding: 0;
 }
 .cv:hover{
-	background: rgba(255, 0, 208,.2);
+    background: rgba(255, 0, 208,.2);
 }
 #metodologias{
-	background: rgba(182, 0, 255, .01);
-	height: 300px;
-	box-shadow: 0 5px 20px rgb(126, 119, 113); 
+    background: rgba(182, 0, 255, .01);
+    height: 300px;
+    box-shadow: 0 5px 20px rgb(126, 119, 113); 
 }
 #habilidades{
-	background: rgba(182, 0, 255, .01);
-	height: 600px;
-	box-shadow: 0 5px 20px rgb(126, 119, 113)
+    background: rgba(182, 0, 255, .01);
+    height: 600px;
+    box-shadow: 0 5px 20px rgb(126, 119, 113)
 }
 #habilidades .row{
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 #habilidades img, #metodologias img{
-	height: 15vh;
-	margin: 5vh 1vh 5vh 1vh;
+    height: 15vh;
+    margin: 5vh 1vh 5vh 1vh;
 }
 #proyectos{
-	background: rgba(182, 0, 255, .01);
-	height: 600px;
+    background: rgba(182, 0, 255, .01);
+    height: 600px;
 }
 .redes{
-	font-family: "icomoon";
-	display: flex;
-	justify-content: space-between;
-	font-size: 2em;
+    font-family: "icomoon";
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+}
+.habilidad img {
+    transition: all 0.4s ease-in-out 0.2s;
+    opacity: 1;
+}
+.habilidad .nivel {
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transform: scale(0) rotate(-180deg);/*Rotamos 180grados y le damos tamaño 0*/
+    transition: all 0.4s ease-in;
+    border-radius: 30px;
+}
+.habilidad h4{
+    opacity: .5;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+}
+.habilidad:hover .nivel {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);/*Regresamos a su tamaño y posición original*/
+    transition-delay: 0.2s;
+}
+.habilidad:hover h4{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.card img{
+    height: 300px;
+}
+.boton-tarjeta{
+    width: 25%;
+    margin:0 5% 0 5%;
+    border-radius: 10%;
+    border: none;
+    background: rgba(255, 0, 208, .2);
+}
+.git{
+    font-family: 'icomoon'; 
+    font-size: 20px;
+}
+.git::before{
+    content: "\eab0";
 }
 .redes li:nth-child(1)>a::before {
   content: "\e942";
 }
 .redes li:nth-child(2)>a::before{
-	content: "\ea93";
+    content: "\ea93";
 }
 .redes li:nth-child(3)>a::before{
-	content: "\ea95";
+    content: "\ea95";
 }
 .redes li:nth-child(4)>a::before{
-	content: "\ea86";
+    content: "\ea86";
 }
 .redes li:nth-child(5)>a::before{
-	content: "\eac9";
+    content: "\eac9";
 }
 .redes li:nth-child(6)>a::before{
-	content: "\eab0";
+    content: "\eab0";
 }
 #contacto{
-	background-color: #000;
+    background-color: #000;
 }
 
 /*efecto de habilidades*/
 /*.habilidad:hover::before{
-	content: "Básico";
-	width: 100%;
-	height:100%;
-	background: yellow;
-	display: block;
+    content: "Básico";
+    width: 100%;
+    height:100%;
+    background: yellow;
+    display: block;
 }*/
-.habilidad img {
-	transition: all 0.4s ease-in-out 0.2s;
-	opacity: 1;
-}
-.habilidad .nivel {
-	background-color: rgba(0,0,0,0.5);
-	opacity: 0;
-	transform: scale(0) rotate(-180deg);/*Rotamos 180grados y le damos tamaño 0*/
-	transition: all 0.4s ease-in;
-	border-radius: 30px;
-}
-.habilidad h4{
-	opacity: .5;
-	background: transparent;
-	transition: all 0.5s ease-in-out;
-}
-.habilidad:hover .nivel {
-	opacity: 1;
-	transform: scale(1) rotate(0deg);/*Regresamos a su tamaño y posición original*/
-	transition-delay: 0.2s;
-}
-.habilidad:hover h4{
-	opacity: 1;
-	transition-delay: 0.5s;
-}
-.card img{
-	height: 300px;
-}
 
 /*versión móvil*/
 @media (max-width: 768px) {
-	#acerca-de-mi h1{
-		font-size: 2.5em
-	}
-	#acerca-de-mi p{
-		font-size: 1.5em;
-	}
-	#metodologias, #habilidades, #proyectos, #contacto{
-		height: 100%;
-	}
+    #acerca-de-mi h1{
+        font-size: 2.5em
+    }
+    #acerca-de-mi p{
+        font-size: 1.5em;
+    }
+    #metodologias, #habilidades, #proyectos, #contacto{
+        height: 100%;
+    }
 }
 
 @media (max-width: 460px) {
-	#acerca-de-mi h1{
-		font-size: 1.8em
-	}
-	#acerca-de-mi p{
-		font-size: 1em;
-	}
-	footer h5{
-		font-size: 2em;
-	}
-	footer p{
-		font-size: 1em;
-	}
-}
+    #acerca-de-mi h1{
+        font-size: 1.8em
+    }
+    #acerca-de-mi p{
+        font-size: 1em;
+    }
+    footer h5{
+        font-size: 2em;
+    }
+    footer p{
+        font-size: 1em;
+    }
